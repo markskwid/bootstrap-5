@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#top-navbar">
+    <header>
+        <div class="container-fluid bg-secondary px-3 py-2">
+            <p class="text-white text-capitalize text-center poppins-regular m-0 fs-300">
+                Get 50% off with our offers! Hurry up!
+            </p>
+        </div>
+
+        <div class="offcanvas offcanvas-start w-50" id="offcanvas-link" tabindex="-1">
+            <div class="container-fluid px-0 py-0 positon-relative">
+                <button class="btn-close bg-white p-2 text-black rounded-0 text-reset"
+                    data-bs-dismiss="offcanvas"></button>
+                <ul class="list-group p-0 m-0 w-100 text-uppercase poppins-semibold">
+                    <li class="list-group-item"><a href="#" class="text-muted">Home</a></li>
+                    <li class="list-group-item"><a href="#" class="text-muted">Plans</a></li>
+                    <li class="list-group-item"><a href="#" class="text-muted">About</a></li>
+                    <li class="list-group-item"><a href="#" class="text-muted">Mission</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid p-0 m-0 position-sticky sticky top-0 z-5">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4" id="top-navbar">
+            <div class="header-PC container d-flex justify-content-between align-items-center px-xl-0 px-lg-5 px-2">
+                <div class="logo-wrapper flex-fill order-lg-0 order-1 text-lg-start text-center">
+                    <a href="#" class="navbar-brand">
+                        <img src="./assets/img/brand-logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="button-wrapper flex-fill d-lg-none order-0">
+                    <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-link">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="link-wrapper flex-fill order-lg-1 d-lg-block d-none">
+                    <ul class="navbar-nav p-0 m-0 justify-content-center gap-lg-5">
+                        <li class="nav-item fs-300 poppins-semibold text-uppercase"><a href="#"
+                                class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item fs-300 poppins-semibold text-uppercase"><a href="#plan-cards"
+                                class="nav-link">Plans</a>
+                        </li>
+                        <li class="nav-item fs-300 poppins-semibold text-uppercase"><a href="#"
+                                class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item fs-300 poppins-semibold text-uppercase"><a href="#"
+                                class="nav-link">Mission</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icon-wrapper flex-fill order-lg-2 order-2">
+                    <ul
+                        class="d-flex justify-content-xxl-end justify-content-lg-end justify-content-md-end justify-content-center gap-xl-5 gap-lg-4 gap-md-4 gap-3 m-0 p-0 pe-md-3 list-unstyled">
+                        <li><a href="#" class="fs-500 text-white" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-search"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#" class="fs-500 text-white"><i class="fa fa-user"></i></a></li>
+                        <li><a href="#" class="fs-500 text-white"><i class="fa fa-cart-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- COLLAPSIBLE SEARCHBAR -->
+        <div class="collapse bg-dark px-0" id="collapse-search">
+            <div class="col-lg-9 col-12 d-lg-block mx-auto px-lg-0 px-4 py-3">
+                <form action="">
+                    <div class="col-12 input-group">
+                        <input type="text" class="form-control rounded-0 poppins-semibold text-uppercase fw-semibold"
+                            placeholder="Search">
+
+                        <button class="btn btn-secondary rounded-0 border-0" type="button" id="button-addon2">
+                            <i class="fa fa-search align-top"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <section>
+            <div class="container-fluid p-0 position-relative">
+                <div class="carousel carousel-fade slide" id="banner-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active w-100">
+                            <img src="./assets/img/banner.jpg" alt="Los Angeles" class="d-block">
+                            <div class="carousel-caption p-0 flex-column justify-content-center align-items-center">
+                                <h1 class="heading-1 poppins-bold text-uppercase">Kuting</h1>
+                                <p class="poppins-semibold text-uppercase font-size-300">Come and join us! With 50%
+                                    discount if you
+                                    avail this month</p>
+                                <div class="col-xl-4 col-lg-8 mx-auto p-0">
+                                    <button class="btn btn-sm w-100 btn-dark border-2 border-white">
+                                        <p class="m-0 fs-500 text-uppercase poppins-semibold py-3">Register your
+                                            membership</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="./assets/img/banner-2.jpg" alt="Chicago" class="d-block">
+                        </div>
+                        <div class="carousel-item w-100">
+                            <img src="./assets/img/banner-3.jpg" alt="New York" class="d-block">
+                        </div>
+                    </div>
+
+                    <div class="container-fluid h-100">
+                        <button class="carousel-control-prev position-absolute" type="button"
+                            data-bs-target="#banner-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-absolute" type="button"
+                            data-bs-target="#banner-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANS SECTION -->
+        <section>
+            <div class="container-fluid px-lg-5 px-0 py-5 text-center" id="plan-cards">
+                <div class="container h2-container">
+                    <h2 class="h2 display-6 fw-bold poppins-bold text-uppercase text-muted">Our Plans</h2>
+                </div>
+                <div class="container-fluid px-xl-5 px-lg-0 px-md-0 px-4 py-4">
+                    <div class="feature-container container">
+                        <div class="row gx-5 gx-lg-1 gx-md-2 gy-md-2">
+                            <div
+                                class="col-xl-4 col-lg-4 col-md-6 col-12 p-3 p-lg-2 p-md-2 rounded-3 card-wrapper rounded-0">
+                                <div class="card p-0 border-0 rounded-0 text-white bg-primary bg-gradient">
+                                    <div class="card-header border-0">
+                                        <p class="text-start heading-2 poppins-semibold text-capitalize m-0">
+                                            <span class="fs-500 d-block fw-bold poppins-bold">$10.00 / Month</span>
+                                            Basic
+                                            <i class="fa-solid fa-house fa-xs"></i>
+                                        </p>
+
+                                        <p class="poppins-regular text-start fs-300">Free membership for those who wants
+                                            to
+                                            learn</p>
+                                    </div>
+
+                                    <div class="card-body rounded-top-5 text-black-50 bg-white">
+                                        <ul
+                                            class="membership-list-items fs-300 list-unstyled text-start poppins-regular text-capitalize p-0">
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description <span class="badge text-bg-primary">New</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer bg-white px-4 py-3 border-0 rounded-0 ">
+                                        <button
+                                            class="btn btn-lg btn-primary bg-gradient w-100 border-0 rounded-pill poppins-semibold text-uppercase">
+                                            <p class="m-0 poppins-semibold">Get this plan</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-3 p-lg-2 p-md-2 rounded-0 card-wrapper">
+                                <div class="card p-0 bg-success bg-gradient border-0 rounded-0 text-white">
+                                    <div class="card-header border-0">
+                                        <p class="text-start heading-2 poppins-semibold text-capitalize m-0">
+                                            <span class="fs-500 d-block fw-bold poppins-bold">$10.00 / Month</span>
+                                            Gold
+                                            <i class="fa-solid fa-star fa-xs"></i>
+
+                                        </p>
+
+                                        <p class="poppins-regular text-start fs-300">Free membership for those who wants
+                                            to
+                                            learn</p>
+                                    </div>
+
+                                    <div class="card-body rounded-top-5 bg-white text-black-50">
+                                        <ul
+                                            class="membership-list-items fs-300 list-unstyled text-start poppins-regular text-capitalize p-0">
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                </span>
+                                                Sample Description <span class="badge text-bg-success">New</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer px-4 py-3 border-0 bg-white rounded-0">
+                                        <button
+                                            class="btn btn-lg btn-success bg-gradient w-100 border-0 rounded-pill poppins-semibold text-uppercase">
+                                            <p class="m-0 poppins-semibold">Get this plan</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-xl-4 col-lg-4 col-md-6 mx-md-auto col-12 p-3 p-lg-2 p-md-2 rounded-0 card-wrapper">
+                                <div class="card p-0 rounded-0 bg-primary bg-gradient border-0 text-white">
+                                    <div class="card-header border-0">
+                                        <p class="text-start heading-2 poppins-semibold text-capitalize m-0">
+                                            <span class="fs-500 d-block fw-bold poppins-bold">$10.00 / Month</span>
+                                            Platinum
+                                            <i class="fa-solid fa-gift fa-xs"></i>
+                                        </p>
+
+                                        <p class="poppins-regular text-start fs-300">Free membership for those who wants
+                                            to
+                                            learn</p>
+                                    </div>
+
+                                    <div class="card-body bg-white text-black-50 rounded-top-5">
+                                        <ul
+                                            class="membership-list-items fs-300 list-unstyled text-start poppins-regular text-capitalize p-0">
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description
+                                                <span class="badge text-bg-primary">New</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="">
+                                                    <i class="fa-regular fa-circle-check"></i>
+                                                </span>
+                                                Sample Description <span class="badge text-bg-primary">New</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-footer px-4 bg-white rounded-0 py-3 border-0 ">
+                                        <button
+                                            class="btn btn-lg btn-primary bg-gradient w-100 border-0 rounded-pill poppins-semibold text-uppercase">
+                                            <p class="m-0 poppins-semibold">Get this plan</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATS SECTION  -->
+        <section>
+            <div class="container-fluid px-xl-5 px-0 py-2 text-center">
+                <div class="container h2-container">
+                    <h2 class="display-6 fw-bold poppins-bold text-uppercase text-muted">Our Cats</h2>
+                </div>
+
+                <div class="container-fluid px-lg-5 px-4 py-4">
+                    <div class="container px-4 px-md-5">
+                        <div class="row gx-5 p-0" id="cat-container">
+                            <!-- CATS IMAGES APPENDED HERE  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEET OUR CEO  -->
+
+        <section>
+            <div class="container-fluid px-lg-5 px-0 py-2 mt-3 text-center">
+                <div class="container h2-container">
+                    <h2 class="display-6 fw-bold poppins-bold text-uppercase text-muted">Meet the CEO</h2>
+                </div>
+
+                <div class="container-fluid px-lg-5 px-4 py-0">
+                    <div
+                        class="container px-0 d-flex flex-lg-row flex-column flex-column-reverse justify-content-center align-items-center">
+                        <div class="col-xxl-7 col-xl-8 col-lg-7 col-md-11 col-sm-11 col-12 py-5 px-xl-4 px-lg-1">
+                            <blockquote class="blockquote ceo-testimony-blockquote">
+                                <p
+                                    class="ceo-testimony poppins-regular-italic fs-500 text-muted text-lg-start text-center m-0">
+                                    Meow
+                                    meow
+                                    meow
+                                    meow meow meow,
+                                    meow meow meow
+                                    meow meow meow meow meow meow meow meow
+                                    meow meow meow meow meow meow meow
+                                    meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow
+                                    meow
+                                    meow meow meow meow meow meow meow
+                                    meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow
+                                    meow
+                                    meow meow meow meow meow meow meow
+                                    meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow
+                                    meow
+                                </p>
+
+                                <div class="py-4 text-lg-start text-center blockquote-footer poppins-semibold">Mr.
+                                    Muning
+                                    <div>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-xxl-5 col-xl-4 col-lg-6 col-md-6 col-sm-8 col-12 p-0 ceo-img ">
+                            <img src="./assets/img/ceo-photo.png" alt="" class="object-fit-fill w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CUSTOMER TESTIMONY  -->
+        <section>
+            <div class="container-fluid px-xl-5 px-lg-0 px-0 py-2 mt-3 text-center">
+                <div class="container h2-container">
+                    <h2 class="display-6 fw-bold poppins-bold text-uppercase text-muted">Our clients say</h2>
+                </div>
+
+                <div class="container px-lg-0 px-1">
+                    <div class="carousel slide p-0" id="customer-testimony-carousel">
+                        <div class="d-block px-lg-5 mx-auto carousel-inner mt-lg-0">
+                            <div class="carousel-item active">
+                                <div
+                                    class="container-fluid px-5 py-lg-3 h-100 d-flex flex-column justify-content-xxl-start justify-content-center align-items-center">
+                                    <div class="photo-wrapper">
+                                        <img src="./assets/img/sample-customer-profile.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+                                    </div>
+
+                                    <div class="container py-lg-3 px-lg-5 mt-lg-0 mt-5">
+                                        <blockquote class="blockquote">
+                                            <p class="customer-text text-black poppins-regular fs-300">Lorem ipsum dolor
+                                                sit amet
+                                                consectetur
+                                                adipisicing elit. Natus magni nisi
+                                                labore
+                                                maiores doloremque consequatur facilis ullam neque, quo porro magnam
+                                                dicta
+                                                provident, corporis minima dolore est perspiciatis placeat sit.</p>
+
+                                            <div class="blockquote-footer">
+                                                <p class="d-inline poppins-semibold fs-500 text-capitalize">Mork</p>
+                                            </div>
+                                        </blockquote>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div
+                                    class="container-fluid px-5 py-lg-3 h-100 d-flex flex-column justify-content-xxl-start justify-content-center align-items-center">
+                                    <div class="photo-wrapper">
+                                        <img src="./assets/img/sample-customer-profile.jpg" alt=""
+                                            class="img-fluid rounded-circle">
+                                    </div>
+
+                                    <div class="container py-lg-3 px-lg-5 mt-lg-0 mt-5">
+                                        <blockquote class="blockquote">
+                                            <p class="customer-text text-black poppins-regular fs-300">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                                perspiciatis laboriosam sed iure natus, maxime modi impedit deserunt
+                                                eaque vitae expedita consequatur rem quis quisquam eius veniam
+                                                repellendus perferendis amet.
+                                            </p>
+
+                                            <div class="blockquote-footer">
+                                                <p class="d-inline poppins-semibold fs-500 text-capitalize">Mork</p>
+                                            </div>
+                                        </blockquote>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#customer-testimony-carousel" data-bs-slide="prev">
+                            <span class="bg-warning p-lg-4 p-2 rounded-circle">
+                                <i class="fa-solid fa-angles-left fa-xl text-dark"></i>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#customer-testimony-carousel" data-bs-slide="next">
+                            <span class="bg-warning p-lg-4 p-2 rounded-circle">
+                                <i class="fa-solid fa-angles-right fa-xl text-dark"></i>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- FOOTER SECTION  -->
+    <footer>
+        <div class="container-fluid bg-dark px-xl-5 px-lg-5 py-4">
+            <div class="container p-0">
+                <div class="row gx-lg-5 gx-0 text-white">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="container-fluid p-3">
+                            <h4 class="h4 poppins-semibold text-capitalize mb-4">
+                                About Us
+                            </h4>
+                            <p class="text-white-50 poppins-regular">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Tenetur repudiandae commodi nisi?
+                                Ullam quaerat laudantium architecto nihil illum porro inventore quia non.</p>
+
+                            <img src="./assets/img/brand-logo.png" alt="" class="d-block">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="container-fluid p-3">
+                            <h4 class="h4 poppins-semibold text-capitalize mb-4">
+                                Contact Info
+                            </h4>
+
+                            <ul class="list-unstyled poppins-regular text-white-50">
+                                <li>
+                                    <span><i class="fa-solid fa-envelope fa-sm"></i></span>
+                                    muning@gmail.com
+                                </li>
+
+                                <li>
+                                    <span><i class="fa-solid fa-phone fa-sm"></i></span>
+                                    muning@gmail.com
+                                </li>
+
+                                <li>
+                                    <span><i class="fa-solid fa-location-dot fa-sm"></i></span>
+                                    muning@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="container-fluid p-3">
+                            <h4 class="h4 poppins-semibold text-capitalize mb-4">
+                                Important Links
+                            </h4>
+
+                            <ul class="list-unstyled poppins-regular text-white-50">
+                                <li><a href="#" class="text-white-50">Plans</a></li>
+                                <li><a href="#" class="text-white-50">Mission</a></li>
+                                <li><a href="#" class="text-white-50">Cats</a></li>
+                                <li><a href="#" class="text-white-50">Products</a></li>
+                                <li><a href="#" class="text-white-50">Cart</a></li>
+                                <li><a href="#" class="text-white-50">Demo</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-12 col-md-6 col-12">
+                        <div class="container-fluid p-3">
+                            <h4 class="h4 poppins-semibold text-capitalize mb-4">
+                                Newsletter
+                            </h4>
+
+                            <p class="text-white-50 poppins-regular">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, velit! Cumque hic
+                                beatae, ea nostrum voluptatum doloribus.
+                            </p>
+
+                            <div class="form-container w-100 p-0">
+                                <div class="input-group mb-3 p-0">
+                                    <input type="text" class="form-control poppins-regular rounded-start border-0"
+                                        placeholder="Email address">
+                                    <button class="btn btn-md btn-warning">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container py-3 px-0 border-top mt-5">
+                    <div class="row p-0">
+                        <div class="col-xl-10 col-lg-10 col-12">
+                            <p class="text-white-50 text-lg-start text-center poppins-regular m-0">
+                                Copyright &copy; 2024 All rights reserved | Made by <span
+                                    class="text-warning poppins-semibold">
+                                    Mork
+                                </span>
+                            </p>
+                        </div>
+
+
+                        <div class="col-xl-2 col-lg-2 col-5 d-block mx-lg-0 mx-auto text-end mt-lg-0 mt-4">
+                            <ul class="list-unstyled d-flex justify-content-between align-items-center py-0">
+                                <li class="">
+                                    <a href="" class="text-white-50 fs-500">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="text-white-50 fs-500 mr-2">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="text-white-50 fs-500">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="" class="text-white-50 fs-500">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="" class="text-white-50 fs-500">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/21bd8fe24d.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+
+</html>
